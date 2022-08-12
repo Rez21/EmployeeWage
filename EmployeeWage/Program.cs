@@ -24,6 +24,10 @@
             //UC 5 employee monthly wage calculation
             UC5_MonthlyWage_Calculation monthlyWage = new UC5_MonthlyWage_Calculation();
             monthlyWage.EmpWageMonth();
+            // UC6 Employee total wage calculation
+            UC6_Employee_TotalWage totalWage = new UC6_Employee_TotalWage();
+            totalWage.EmpWageTotal();
+                 
 
         }
     }
