@@ -21,6 +21,9 @@
             Console.WriteLine("Employee Wage Calculation using switch case");
             UC4_EmployeeWage_using_switch wageCase = new UC4_EmployeeWage_using_switch();
             wageCase.Empwage();
+            //UC 5 employee monthly wage calculation
+            UC5_MonthlyWage_Calculation monthlyWage = new UC5_MonthlyWage_Calculation();
+            monthlyWage.EmpWageMonth();
 
         }
     }
