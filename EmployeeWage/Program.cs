@@ -17,7 +17,10 @@
             Console.WriteLine("Employee Part-Time Wage Calculation");
             UC3_PartTime_Wage partTime= new UC3_PartTime_Wage();
             partTime.PartTimeWage();
-
+            // UC4 employee wage calculation using switch case
+            Console.WriteLine("Employee Wage Calculation using switch case");
+            UC4_EmployeeWage_using_switch wageCase = new UC4_EmployeeWage_using_switch();
+            wageCase.Empwage();
 
         }
     }
