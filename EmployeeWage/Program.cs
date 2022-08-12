@@ -13,6 +13,12 @@
             Console.WriteLine("Employee Wage Calculation");
             UC2_EmployeeWage_Calculation wage = new UC2_EmployeeWage_Calculation();
             wage.DailyWage();
+            // UC3 - Part time wage calculation
+            Console.WriteLine("Employee Part-Time Wage Calculation");
+            UC3_PartTime_Wage partTime= new UC3_PartTime_Wage();
+            partTime.PartTimeWage();
+
+
         }
     }
 }
