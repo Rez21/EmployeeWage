@@ -4,11 +4,7 @@
     {
         public const int Part_Time = 2;
         public const int Full_Time = 1;
-        public const int empRatePerHr = 20;
-        public const int numOfWorkDay = 20;
-        public const int MaxWorkHr = 100;
-
-        public static int computeEmpWage()
+        public static int computeEmpWage(string company, int empRatePerHr,int numOfWorkDay,int MaxWorkHr)
         {
             int empHr = 0;
             int totalwage = 0;
@@ -32,19 +28,18 @@
                     default:
                         empHr = 0;
                         break;
-
                 }
                 totalEmpHrs += empHr;
             }
             totalwage = totalEmpHrs * empRatePerHr;
             Console.WriteLine("Day: " + totalWorkDays + "\nEmployee working Hrs: " + totalEmpHrs);
-            Console.WriteLine("Total Salary is: " + totalwage);
+            Console.WriteLine("Total Wage for company: " +company  + " is: " + totalwage);
             return totalwage;
-
         }
         static void Main(string[] args)
         {
-            computeEmpWage();
+            computeEmpWage("Jio",20,2,10);
+            computeEmpWage("Airtel",15,2,12);
         }
     }
 }
